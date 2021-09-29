@@ -20,7 +20,6 @@
     overflow: hidden;
     background-color: skyblue;
     display: flex;
-    justify-content: space-around;
     width: 100%;
     height: 80px;
 
@@ -33,7 +32,7 @@ li {
 /* NAVBAR BUTTONS */
 
 
-li a {
+.navbar-div li a {
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
@@ -47,30 +46,49 @@ li a {
     box-shadow: 0 9px #999;
     margin-top: 5px;
 }
-li a:hover {
+.navbar-div li a:hover {
   background-color: #418abb7a;
 }
-li a.active {
+.navbar-div li a.active {
   background-color: #418abb;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-.activelaunch {
+.navbar-div .activelaunch {
   background-color: red;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-.activelaunch:hover {
+.navbar-div .activelaunch:hover {
   background-color: red;
 }
 .launchclass {
-  background-color:#ff9944;
+  background-color:red;
 }
 #launch:hover {
   background-color: red;
+  box-shadow: 1px 5px 20px 10px #f59300;
+
 }
 
-/**/
+/*Social Media Links*/
+
+.social-links-frontpage {
+  overflow: hidden;
+  position: fixed;
+  bottom: 10%;
+  font-size: 64px;
+  left: 50%;
+}
+.social-links-location {
+  width: 50%;
+  margin-left: auto;
+  font-size: 64px;
+  margin-top: 50px;
+ }
+
+
+/*Frontpage and the headers*/
 
 #Frontpage {
     background-image: url(img/skyburgerfront.jpg);
@@ -106,6 +124,16 @@ h3 {
 
 #MenuHeader {
   font-size: 2rem;
+  background-color: rgba(137, 171, 223, 0.8);
+  width: 40%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  color: white;
+  box-shadow: 0 7px gray;
+  
+
+  
 }
 
 .pricetag {
@@ -236,6 +264,7 @@ height: 55px;
 #Location {
   background-image: url(img/kidmap.jpg);
 }
+
 
 
 
