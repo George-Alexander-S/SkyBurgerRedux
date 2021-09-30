@@ -11,16 +11,18 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 9;
 }
 .navbar-ul {
     display: flex;
     list-style-type: none;
     overflow: hidden;
-    background-color: white;
     display: flex;
     width: 100%;
     height: 80px;
+    background-image: url(img/metalpanelbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 li {
@@ -31,7 +33,6 @@ li {
   justify-content:right;
   list-style-type: none;
   overflow: hidden;
-  background-color: white;
   display: flex;
   width: 100%;
   height: 80px;
@@ -70,17 +71,19 @@ li {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-.launchbutton {
+.launchbutton { /*Background of launch button*/
   position: fixed;
   top: 0;
-  width:170px;
-  margin-left: 88%;
+  width:250px;
+  margin-left: 70%;
+  z-index: 10;
 }
 .navbar-div .activelaunch:hover {
   background-color: red;
 }
-.launchbutton .launchclass {
+.launchbutton .launchclass { /* Actual launchbutton*/
   background-color:red;
+  margin-right: 45px;
 }
 .launchbutton #launch:hover {
   background-color: red;
