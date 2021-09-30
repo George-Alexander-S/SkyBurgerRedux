@@ -15,10 +15,9 @@
 }
 .navbar-ul {
     display: flex;
-    justify-content: space-around;
     list-style-type: none;
     overflow: hidden;
-    background-color: skyblue;
+    background-color: white;
     display: flex;
     width: 100%;
     height: 80px;
@@ -26,6 +25,16 @@
 }
 li {
     float: left;
+}
+.launchbuttonul {
+  display: flex;
+  justify-content:right;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 80px;
 }
 
 
@@ -45,6 +54,8 @@ li {
     border-radius: 15px;
     box-shadow: 0 9px #999;
     margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .navbar-div li a:hover {
   background-color: #418abb7a;
@@ -59,13 +70,19 @@ li {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.launchbutton {
+  position: fixed;
+  top: 0;
+  width:170px;
+  margin-left: 88%;
+}
 .navbar-div .activelaunch:hover {
   background-color: red;
 }
-.launchclass {
+.launchbutton .launchclass {
   background-color:red;
 }
-#launch:hover {
+.launchbutton #launch:hover {
   background-color: red;
   box-shadow: 1px 5px 20px 10px #f59300;
 
